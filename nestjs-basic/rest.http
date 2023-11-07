@@ -1,0 +1,20 @@
+GET http://localhost:3000/v1/api/users
+
+###
+POST http://localhost:3000/v1/api/user
+Content-Type: application/json
+
+{
+    "username" : "Tutung"
+}   
+
+###
+PATCH http://localhost:3000/v1/api/user/10
+Content-Type: application/json
+
+{
+    "username" : "Slamet Kopling"
+}
+
+###
+DELETE http://localhost:3000/v1/api/user/1

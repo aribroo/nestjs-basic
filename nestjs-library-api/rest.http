@@ -1,0 +1,67 @@
+################## Book API #######################
+### Get Books
+GET http://localhost:3000/api/books
+
+### Get Book By Id
+GET http://localhost:3000/api/book/653a44620f59eceadeb10070
+
+### Create Book
+POST http://localhost:3000/api/book
+Content-Type: application/json
+
+{
+    "title": "Harry Potter",
+    "description": "Description 1",
+    "author": "Rifki Ari",
+    "price": 350000,
+    "category": "Adventure"
+}
+
+### Update Book
+PATCH http://localhost:3000/api/book/653a44620f59eceadeb10070
+Content-Type: application/json
+
+{
+    "title": "Poolisi"
+}
+
+### Delete Book
+DELETE http://localhost:3000/api/book/653a418bd8c5edd3a3134e79
+
+
+################## User API #######################
+
+### SigUp User
+POST http://localhost:3000/api/user/signup
+Content-Type: application/json
+
+{
+    "name" : "Rifki Ari",
+    "email" : "rifkiari@gmail.com",
+    "password" : "ari123"
+}
+
+### Login User
+POST http://localhost:3000/api/user/login
+Content-Type: application/json
+
+{
+    "email" : "rifkiari@gmail.com",
+    "password" : "ari123"
+}
+
+### Get User
+GET http://localhost:3000/api/user/653a3b73a9df762c87e0c6b6
+
+
+### Update User
+PATCH http://localhost:3000/api/user/653a3b73a9df762c87e0c6b6
+Content-Type: application/json
+
+{
+    "name" : "Rifki Ari",
+    "password" : "ari123"
+}
+ 
+### Delete User
+DELETE http://localhost:3000/api/user/653a3b73a9df762c87e0c6b6

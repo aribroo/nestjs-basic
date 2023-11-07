@@ -1,0 +1,8 @@
+###
+POST http://localhost:3000/orders
+Content-Type: application/json
+
+{
+    "customerEmail" : "rifkari@gmail.com",
+    "totalPrice" : 696969
+}   
